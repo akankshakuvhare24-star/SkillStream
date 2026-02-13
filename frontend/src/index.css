@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* Smooth animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card hover effects */
+.MuiCard-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Gradient buttons */
+.gradient-button {
+  background: linear-gradient(45deg, #667eea 30%, #764ba2 90%) !important;
+  color: white !important;
+  transition: transform 0.3s ease !important;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+}
+
+/* Stats cards */
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+}
+
+/* Progress bars */
+.MuiLinearProgress-root {
+  border-radius: 10px !important;
+  height: 10px !important;
+}
+
+.MuiLinearProgress-bar {
+  background: linear-gradient(90deg, #667eea, #764ba2) !important;
+}
