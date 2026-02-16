@@ -3,10 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routes.auth import router as auth_router  # Direct import
 
 app = FastAPI()
+orgins = [ "http://akankshakuvhare24-star.github.io" ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=orgins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
